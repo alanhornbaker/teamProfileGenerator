@@ -8,19 +8,19 @@ const employees = [{
     officeNumber: 1,
   }, {
     name: "Alec",
-    role: "Engineer",
+    role: "Intern",
     id: 2,
     email: "alec@fakemail.com",
     githubUsername: "gitAlec",
   }, {
     name: "Grace",
-    role: "Engineer",
+    role: "Intern",
     id: 3,
     email: "grace@fakemail.com",
     githubUsername: "gitGrace",
   }, {
     name: "Tammer",
-    role: "Engineer",
+    role: "Intern",
     id: 4,
     email: "tammer@fakemail.com",
     githubUsername: "gitTammer",
