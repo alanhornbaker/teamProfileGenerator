@@ -1,4 +1,4 @@
-const Intern = require("./path/to/Intern");
+const Intern = require("../lib/engineer.js");
 
 describe("Intern", () => {
   const mockIntern = {

@@ -1,4 +1,4 @@
-const Manager = require("./path/to/Manager");
+const Manager = require("../lib/manager.js");
 
 describe("Manager", () => {
   const mockManager = {
@@ -12,6 +12,7 @@ describe("Manager", () => {
       const manager = new Manager(mockManager);
       expect(manager).toBeInstanceOf(Manager);
     });
+
     test("should construct a new instance of an manager class with name, id, email, and school", () => {
       const manager = new Manager(mockManager);
       expect(manager).toEqual({
@@ -23,6 +24,7 @@ describe("Manager", () => {
       });
     });
   });
+
   describe("method tests", () => {
     test("should return id when the getId method is called", () => {
       const manager = new Manager(mockManager);
@@ -47,6 +49,7 @@ describe("Manager", () => {
     test("should return manager role when the getRole method is called", () => {
       const manager = new Manager(mockManager);
       expect(manager.getEmail()).toEqual("Manager");
+      // This should overwrite the role from the employee parent class.
     });
   });
 });
